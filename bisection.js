@@ -4,7 +4,8 @@
 */
 
 function f(x) {
-    return Math.pow(x,3) + 4*(Math.pow(x,2)) - 10;
+    //return Math.pow(x,3) + 4*(Math.pow(x,2)) - 10;
+    return (0.5) + ((0.5)*(Math.pow(Math.E,((-x)/(2*Math.PI))))*(Math.sin(x))) - (0.75)
 }
 
 function getN(a,b,epsilon) {
@@ -14,9 +15,9 @@ function getN(a,b,epsilon) {
 function bisection() {
     console.log("n", "\ta", "\tp", "\terror");
      
-    let a = 1.0;
-    let b = 2.0;
-    let epsilon = Math.pow(10,-4);
+    let a = 0.0;
+    let b = 2.1;
+    let epsilon = 0.2;
     let n = getN(a,b,epsilon);
     let count = 0;
 
